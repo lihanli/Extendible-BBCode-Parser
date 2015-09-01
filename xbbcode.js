@@ -714,9 +714,7 @@ var XBBCODE = (function() {
     // -----------------------------------------------------------------------------
 
     // API, Expose all available tags
-    me.tags = function() {
-        return tags;
-    }
+    me.tags = tags;
 
     // API
     me.addTags = function(newtags) {
