@@ -292,7 +292,14 @@ var XBBCODE = (function() {
     // -----------------------------------------------------------------------------
 
     // API, Expose all available tags
-    me.tags = tags;
+    me.tags = function() {
+      return tags;
+    };
+
+    me.replaceTags = function(newtags) {
+      tags = {};
+      this.addTags(newtags);
+    };
 
     // API
     me.addTags = function(newtags) {
