@@ -45,7 +45,7 @@ var XBBCODE = (function() {
         fontFacePattern = /^([a-z][a-z0-9_]+|"[a-z][a-z0-9_\s]+")$/i,
         tags,
         tagList,
-        tagsNoParseList = [],
+        tagsNoParseList,
         bbRegExp,
         pbbRegExp,
         pbbRegExp2,
@@ -98,6 +98,7 @@ var XBBCODE = (function() {
     // create tag list and lookup fields
     function initTags() {
         tagList = [];
+        tagsNoParseList = [];
         var prop,
             ii,
             len;
